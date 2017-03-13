@@ -8,7 +8,7 @@ import com.santander.core.BankTransfer;
 public class AgencyExtractor extends RegexDataExtractor {
 
     public AgencyExtractor() {
-        super("\\b[0-9]{4}\\b", "agencia", "Agencia", "agência", "Agência");
+        super("\\b[0-9]{4}(-[0-9]{1})?\\b", "agencia", "Agencia", "agência", "Agência");
     }
 
     @Override
