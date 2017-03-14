@@ -1,0 +1,12 @@
+/Users/Santander/bank-transfer/src/main/java/com/rafagonc/core/extractors/implementations/BankExtractor.java
+/Users/Santander/bank-transfer/src/main/java/com/rafagonc/core/BankDataProcessor.java
+/Users/Santander/bank-transfer/src/main/java/com/rafagonc/core/extractors/implementations/AccountExtractor.java
+/Users/Santander/bank-transfer/src/main/java/com/rafagonc/core/extractors/implementations/AgencyExtractor.java
+/Users/Santander/bank-transfer/src/main/java/com/rafagonc/core/extractors/implementations/CPFExtractor.java
+/Users/Santander/bank-transfer/src/main/java/com/rafagonc/BankTransferApplication.java
+/Users/Santander/bank-transfer/src/main/java/com/rafagonc/core/extractors/implementations/RegexDataExtractor.java
+/Users/Santander/bank-transfer/src/main/java/com/rafagonc/core/factory/BankDataExtractorFactory.java
+/Users/Santander/bank-transfer/src/main/java/com/rafagonc/core/extractors/contract/BankDataExtractor.java
+/Users/Santander/bank-transfer/src/main/java/com/rafagonc/core/result/BankTransfer.java
+/Users/Santander/bank-transfer/src/main/java/com/rafagonc/core/extractors/implementations/ValueExtractor.java
+/Users/Santander/bank-transfer/src/main/java/com/rafagonc/core/models/Bank.java

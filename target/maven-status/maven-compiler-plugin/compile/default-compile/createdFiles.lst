@@ -1,0 +1,12 @@
+com/rafagonc/core/extractors/implementations/RegexDataExtractor.class
+com/rafagonc/core/models/Bank.class
+com/rafagonc/core/extractors/implementations/AccountExtractor.class
+com/rafagonc/core/extractors/implementations/AgencyExtractor.class
+com/rafagonc/core/extractors/implementations/BankExtractor.class
+com/rafagonc/core/extractors/implementations/CPFExtractor.class
+com/rafagonc/core/result/BankTransfer.class
+com/rafagonc/BankTransferApplication.class
+com/rafagonc/core/factory/BankDataExtractorFactory.class
+com/rafagonc/core/BankDataProcessor.class
+com/rafagonc/core/extractors/contract/BankDataExtractor.class
+com/rafagonc/core/extractors/implementations/ValueExtractor.class

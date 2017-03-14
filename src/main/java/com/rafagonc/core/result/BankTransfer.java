@@ -1,0 +1,47 @@
+package com.rafagonc.core.result;
+
+import java.io.Serializable;
+
+/**
+ * Created by Santander on 3/13/17.
+ */
+public class BankTransfer implements Serializable {
+
+    private String cpf;
+    private String value;
+    private String account;
+    private String agency;
+    private String bank;
+
+    //Getters and Setters
+    public String getCpf() {
+        return cpf;
+    }
+    public void setCpf(String cpf) {
+        this.cpf = cpf.replace(".","").replace("-","").replace("/","");
+    }
+    public String getValue() {
+        return value;
+    }
+    public void setValue(String value) {
+        this.value = value.replace("$","").replace("R","").replace(" ","");
+    }
+    public String getAccount() {
+        return account;
+    }
+    public void setAccount(String account) {
+        this.account = account.replace(".","");
+    }
+    public String getAgency() {
+        return agency;
+    }
+    public void setAgency(String agency) {
+        this.agency = agency;
+    }
+    public String getBank() {
+        return bank;
+    }
+    public void setBank(String bank) {
+        this.bank = bank;
+    }
+}
