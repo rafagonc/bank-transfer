@@ -1,6 +1,6 @@
 package com.rafagonc.core.extractors.implementations;
 
-import com.rafagonc.core.StringUtils;
+import com.rafagonc.core.utils.StringUtils;
 import com.rafagonc.core.result.BankTransfer;
 import com.rafagonc.core.extractors.contract.BankDataExtractor;
 
@@ -33,7 +33,6 @@ public class RegexDataExtractor implements BankDataExtractor {
 
     private String find(String text, String regex) {
         Matcher matcher = matcher(text,regex);
-        String firstMatch = null;
         while (matcher.find()) {
             String match = matcher.group();
             matches.add(match);
@@ -45,7 +44,6 @@ public class RegexDataExtractor implements BankDataExtractor {
                 }
             }
         }
-
         this.trust = false;
         if (matches.size() > 0) {
             return matches.get(0);

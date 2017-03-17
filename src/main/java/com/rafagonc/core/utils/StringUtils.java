@@ -1,4 +1,4 @@
-package com.rafagonc.core;
+package com.rafagonc.core.utils;
 
 import java.util.Arrays;
 import java.util.List;

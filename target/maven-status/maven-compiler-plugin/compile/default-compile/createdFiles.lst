@@ -1,4 +1,5 @@
 com/rafagonc/core/extractors/implementations/RegexDataExtractor.class
+com/rafagonc/core/StringUtils.class
 com/rafagonc/core/models/Bank.class
 com/rafagonc/core/extractors/implementations/AccountExtractor.class
 com/rafagonc/core/extractors/implementations/AgencyExtractor.class

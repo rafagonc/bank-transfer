@@ -17,6 +17,11 @@ public class BankDataProcessor {
         this.text = text;
     }
 
+    //static factory
+    public static BankTransfer transfer(String text) {
+        return new BankDataProcessor(text).transfer();
+    }
+
     //Methods
     public BankTransfer transfer() {
         BankTransfer bankTransfer = new BankTransfer();

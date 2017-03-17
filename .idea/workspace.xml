@@ -1,10 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a7f030c4-3f0b-4b63-8925-83cfaaa21dc9" name="Default" comment="" />
+    <list default="true" id="a7f030c4-3f0b-4b63-8925-83cfaaa21dc9" name="Default" comment="">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/rafagonc/core/StringUtils.java" afterPath="$PROJECT_DIR$/src/main/java/com/rafagonc/core/utils/StringUtils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/rafagonc/BankTransferApplication.java" afterPath="$PROJECT_DIR$/src/main/java/com/rafagonc/BankTransferApplication.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/rafagonc/core/BankDataProcessor.java" afterPath="$PROJECT_DIR$/src/main/java/com/rafagonc/core/BankDataProcessor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/rafagonc/core/extractors/implementations/RegexDataExtractor.java" afterPath="$PROJECT_DIR$/src/main/java/com/rafagonc/core/extractors/implementations/RegexDataExtractor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+    </list>
     <ignored path="SANWPPTransfer.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,6 +23,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -21,114 +33,108 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/santander/Main.java">
+      <file leaf-file-name="BankTransferApplication.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/rafagonc/BankTransferApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#423#424#0" expanded="true" />
+                <element signature="e#469#470#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BankDataExtractor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/santander/core/BankDataExtractor.java">
+      <file leaf-file-name="StringUtils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/rafagonc/core/utils/StringUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="60" selection-start-line="7" selection-start-column="60" selection-end-line="7" selection-end-column="60" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Bank.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/rafagonc/core/models/Bank.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="BankDataExtractorFactory.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/santander/core/factory/BankDataExtractorFactory.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/rafagonc/core/factory/BankDataExtractorFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0">
+              <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BankDataExtractor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/rafagonc/core/extractors/contract/BankDataExtractor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="BankDataProcessor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/santander/core/BankDataProcessor.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/rafagonc/core/BankDataProcessor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="20" column="120" selection-start-line="20" selection-start-column="120" selection-end-line="20" selection-end-column="120" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CPFExtractor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/santander/core/extractors/CPFExtractor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="67" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BankTransfer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/santander/core/BankTransfer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AccountExtractor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/santander/core/extractors/AccountExtractor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="54" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ValueExtractor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/santander/core/extractors/ValueExtractor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
               <folding>
-                <element signature="e#211#212#0" expanded="true" />
-                <element signature="e#303#304#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AgencyExtractor.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/santander/core/extractors/AgencyExtractor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-              <folding>
-                <element signature="e#213#214#0" expanded="true" />
-                <element signature="e#308#309#0" expanded="true" />
+                <element signature="e#496#497#0" expanded="true" />
+                <element signature="e#557#558#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="RegexDataExtractor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/santander/core/extractors/RegexDataExtractor.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/rafagonc/core/extractors/implementations/RegexDataExtractor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0">
+              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CPFExtractor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/rafagonc/core/extractors/implementations/CPFExtractor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BankExtractor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/rafagonc/core/extractors/implementations/BankExtractor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AgencyExtractor.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/rafagonc/core/extractors/implementations/AgencyExtractor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.20547946">
+              <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -144,6 +150,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -176,8 +185,48 @@
         <option value="$PROJECT_DIR$/src/com/santander/core/factory/BankDataExtractorFactory.java" />
         <option value="$PROJECT_DIR$/src/com/santander/Main.java" />
         <option value="$PROJECT_DIR$/src/com/santander/core/extractors/AgencyExtractor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rafagonc/core/extractors/implementations/RegexDataExtractor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rafagonc/core/refactor/StringUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rafagonc/core/utils/StringUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rafagonc/BankTransferApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rafagonc/core/BankDataProcessor.java" />
       </list>
     </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Bundled (Maven 3)" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="bank-transfer" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="bank-transfer" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Lifecycle" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
+        </PATH_ELEMENT>
+      </PATH>
+    </treeState>
   </component>
   <component name="ProjectFrameBounds">
     <option name="width" value="1920" />
@@ -208,47 +257,33 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SANWPPTransfer" />
+              <option name="myItemId" value="bank-transfer" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SANWPPTransfer" />
+              <option name="myItemId" value="bank-transfer" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SANWPPTransfer" />
+              <option name="myItemId" value="bank-transfer" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SANWPPTransfer" />
+              <option name="myItemId" value="bank-transfer" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SANWPPTransfer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SANWPPTransfer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SANWPPTransfer" />
+              <option name="myItemId" value="bank-transfer" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -256,17 +291,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="santander" />
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rafagonc" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SANWPPTransfer" />
+              <option name="myItemId" value="bank-transfer" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SANWPPTransfer" />
+              <option name="myItemId" value="bank-transfer" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -274,7 +317,63 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="santander" />
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bank-transfer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bank-transfer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rafagonc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bank-transfer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bank-transfer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rafagonc" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -284,11 +383,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SANWPPTransfer" />
+              <option name="myItemId" value="bank-transfer" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SANWPPTransfer" />
+              <option name="myItemId" value="bank-transfer" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -296,7 +395,53 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="santander" />
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rafagonc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="extractors" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="implementations" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bank-transfer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bank-transfer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rafagonc" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -310,7 +455,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -322,6 +467,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/com/santander/core" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -335,20 +481,23 @@
       <recent name="junit.framework.TestCase" />
       <recent name="" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/rafagonc/core/refactor" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="com.santander.Main" />
+      <option name="MAIN_CLASS_NAME" value="com.rafagonc.BankTransferApplication" />
       <option name="VM_PARAMETERS" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="SANWPPTransfer" />
+      <module name="bank-transfer" />
       <envs />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
@@ -356,30 +505,32 @@
     </configuration>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="MODE" value="default_activity" />
       <option name="DEPLOY" value="true" />
       <option name="ARTIFACT_NAME" value="" />
-      <option name="PM_INSTALL_OPTIONS" value="" />
-      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
-      <option name="MODE" value="default_activity" />
       <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
-      <option name="FORCE_STOP_RUNNING_APP" value="true" />
-      <option name="DEBUGGER_TYPE" value="Java" />
       <option name="USE_LAST_SELECTED_DEVICE" value="false" />
       <option name="PREFERRED_AVD" value="" />
-      <Java />
-      <Profilers>
-        <option name="GAPID_DISABLE_PCS" value="false" />
-      </Profilers>
-      <option name="DEEP_LINK" value="" />
-      <option name="ACTIVITY_CLASS" value="" />
-      <method>
-        <option name="Make" enabled="true" />
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="SELECTED_CLOUD_DEVICE_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_DEVICE_PROJECT_ID" value="" />
+      <option name="IS_VALID_CLOUD_MATRIX_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_MATRIX_SELECTION_ERROR" value="" />
+      <option name="IS_VALID_CLOUD_DEVICE_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_DEVICE_SELECTION_ERROR" value="" />
+      <option name="CLOUD_DEVICE_SERIAL_NUMBER" value="" />
+      <method />
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
       <module name="" />
@@ -388,24 +539,28 @@
       <option name="METHOD_NAME" value="" />
       <option name="CLASS_NAME" value="" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="EXTRA_OPTIONS" value="" />
       <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
-      <option name="FORCE_STOP_RUNNING_APP" value="true" />
-      <option name="DEBUGGER_TYPE" value="Java" />
       <option name="USE_LAST_SELECTED_DEVICE" value="false" />
       <option name="PREFERRED_AVD" value="" />
-      <Java />
-      <Profilers>
-        <option name="GAPID_DISABLE_PCS" value="false" />
-      </Profilers>
-      <method>
-        <option name="Make" enabled="true" />
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="SELECTED_CLOUD_DEVICE_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_DEVICE_PROJECT_ID" value="" />
+      <option name="IS_VALID_CLOUD_MATRIX_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_MATRIX_SELECTION_ERROR" value="" />
+      <option name="IS_VALID_CLOUD_DEVICE_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_DEVICE_SELECTION_ERROR" value="" />
+      <option name="CLOUD_DEVICE_SERIAL_NUMBER" value="" />
+      <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -526,6 +681,28 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -582,8 +759,30 @@
       <listeners />
       <method />
     </configuration>
-    <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="Application.Main" />
+    <configuration default="false" name="Test" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="bank-transfer" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.rafagonc" />
+      <option name="MAIN_CLASS_NAME" value="com.rafagonc.BankTransferApplicationTests" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="JUnit.Test" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Main" />
     </list>
     <recent_temporary>
       <list size="1">
@@ -591,47 +790,49 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
-  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="a7f030c4-3f0b-4b63-8925-83cfaaa21dc9" name="Default" comment="" />
       <created>1489424549705</created>
       <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
       <updated>1489424549705</updated>
     </task>
     <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="Test - 2017.03.16 at 15h 09m 16s.xml">
+      <configuration name="Test" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32920355" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32920355" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960597" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32920355" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973376" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -656,161 +857,113 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/SANWPPTransfer.iml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rafagonc/core/extractors/implementations/ValueExtractor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/src.zip!/java/util/regex/Pattern.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rafagonc/core/extractors/implementations/AccountExtractor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="802">
-          <caret line="1339" column="18" selection-start-line="1339" selection-start-column="18" selection-end-line="1339" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CPFExtractorTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/rafagonc/BankTransferApplicationTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="84" column="16" selection-start-line="84" selection-start-column="16" selection-end-line="84" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/TrasnferTests.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rafagonc/core/models/Bank.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/com/santander/CPFExtractorTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rafagonc/core/factory/BankDataExtractorFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/com/santander/core/extractors/TransferTests.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rafagonc/core/extractors/contract/BankDataExtractor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/out/production/SANWPPTransfer/SANWPPTransfer.iml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rafagonc/core/utils/StringUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/out/production/SANWPPTransfer/com/santander/Main.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rafagonc/BankTransferApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
           <folding>
-            <element signature="e#0#585#0" expanded="true" />
+            <element signature="e#423#424#0" expanded="true" />
+            <element signature="e#469#470#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/santander/core/factory/BankDataExtractorFactory.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rafagonc/core/BankDataProcessor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#496#497#0" expanded="true" />
+            <element signature="e#557#558#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/santander/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rafagonc/core/extractors/implementations/RegexDataExtractor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/santander/core/extractors/AccountExtractor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="54" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/santander/core/BankDataExtractor.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rafagonc/core/extractors/implementations/CPFExtractor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="60" selection-start-line="7" selection-start-column="60" selection-end-line="7" selection-end-column="60" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/santander/core/BankDataProcessor.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rafagonc/core/extractors/implementations/BankExtractor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="20" column="120" selection-start-line="20" selection-start-column="120" selection-end-line="20" selection-end-column="120" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/santander/core/BankTransfer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rafagonc/core/extractors/implementations/AgencyExtractor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.20547946">
+          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/santander/core/extractors/ValueExtractor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
-          <folding>
-            <element signature="e#211#212#0" expanded="true" />
-            <element signature="e#303#304#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/santander/core/extractors/RegexDataExtractor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/santander/core/extractors/CPFExtractor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/santander/core/extractors/AgencyExtractor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding>
-            <element signature="e#213#214#0" expanded="true" />
-            <element signature="e#308#309#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

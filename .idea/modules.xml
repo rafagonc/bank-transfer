@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/SANWPPTransfer.iml" filepath="$PROJECT_DIR$/SANWPPTransfer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bank-transfer.iml" filepath="$PROJECT_DIR$/bank-transfer.iml" />
     </modules>
   </component>
 </project>

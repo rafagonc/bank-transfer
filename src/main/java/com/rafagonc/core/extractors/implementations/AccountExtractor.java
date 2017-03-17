@@ -1,15 +1,14 @@
 package com.rafagonc.core.extractors.implementations;
 
+import com.rafagonc.core.extractors.contract.BankDataExtractor;
 import com.rafagonc.core.result.BankTransfer;
 
 /**
  * Created by Santander on 3/13/17.
  */
-public class AccountExtractor extends RegexDataExtractor {
+public class AccountExtractor extends RegexDataExtractor implements BankDataExtractor {
 
     public AccountExtractor() {
-        //\b([0-9]{2})\.?([0-9]*)-([0-9]{1})\b
-        //\b([0-9]{2})\.?([0-9]{3,6})-([0-9]{1})\b
         super("\\b([0-9]{2})\\.?([0-9]{2,})-([0-9]{1})\\b", "conta", "Conta", "corrente", "Corrente", "cc", "CC.", "cc.","CC");
     }
 

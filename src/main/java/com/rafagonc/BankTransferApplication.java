@@ -12,7 +12,7 @@ public class BankTransferApplication {
 
 	@RequestMapping("/")
 	public BankTransfer proccess(@RequestParam(required = true) String text) {
-		return new BankDataProcessor(text).transfer();
+		return BankDataProcessor.transfer(text);
 	}
 
 	//Main
