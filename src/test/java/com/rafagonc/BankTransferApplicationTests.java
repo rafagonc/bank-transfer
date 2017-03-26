@@ -1,6 +1,5 @@
 package com.rafagonc;
 
-import com.rafagonc.core.models.Bank;
 import com.rafagonc.core.result.BankTransfer;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -25,7 +24,7 @@ public class BankTransferApplicationTests {
 				"Valor: R$ 170,00 (arredondei por causa das taxas do banco)\n" +
 				"Quando depositar manda o comprovante aqui, pra ficar mais fácil o controle";
 
-		BankTransfer bankTransfer = application.proccess(text);
+		BankTransfer bankTransfer = application.proccess(text,"");
 
 		assert bankTransfer.getCpf().equals("44107383806");
 		assert bankTransfer.getAccount().equals("19945-1");
@@ -43,8 +42,7 @@ public class BankTransferApplicationTests {
 						"CPF 417371778-46\n" +
 						"Bradesco";
 
-		BankTransfer bankTransfer = application.proccess(text);
-
+		BankTransfer bankTransfer = application.proccess(text,"");
 		assert bankTransfer.getCpf().equals("41737177846");
 		assert bankTransfer.getAccount().equals("0015181-5");
 		assert bankTransfer.getAgency().equals("7865-4");
@@ -55,7 +53,7 @@ public class BankTransferApplicationTests {
 	public void test3() {
 		String text = "Banco do Brasil. Agência 1881-3. Conta corrente 14.940-3. CPF 026.701.109-16";
 
-		BankTransfer bankTransfer = application.proccess(text);
+		BankTransfer bankTransfer = application.proccess(text,"");
 
 		assert bankTransfer.getCpf().equals("02670110916");
 		assert bankTransfer.getAccount().equals("14940-3");
@@ -73,7 +71,7 @@ public class BankTransferApplicationTests {
 				"Guilherme Leao de Azevedo Soter\n" +
 				"Cpf: 443.478.078-64";
 
-		BankTransfer bankTransfer = application.proccess(text);
+		BankTransfer bankTransfer = application.proccess(text,"");
 
 		assert bankTransfer.getCpf().equals("44347807864");
 		assert bankTransfer.getAccount().equals("8209-0");
@@ -89,7 +87,7 @@ public class BankTransferApplicationTests {
 				"Guilherme Leao de Azevedo Soter\n" +
 				"443.478.078-64";
 
-		BankTransfer bankTransfer = application.proccess(text);
+		BankTransfer bankTransfer = application.proccess(text,"");
 
 		assert bankTransfer.getCpf().equals("44347807864");
 		assert bankTransfer.getAccount().equals("28209-0");
