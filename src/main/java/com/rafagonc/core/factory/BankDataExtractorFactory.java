@@ -18,6 +18,7 @@ public class BankDataExtractorFactory {
         list.add(new AccountExtractor());
         list.add(new AgencyExtractor());
         list.add(new ValueExtractor());
+        list.add(new WhatsAppNameExtractor());
         for (Bank bank: Bank.values()) {
             list.add(new BankExtractor(bank));
         }

@@ -11,6 +11,7 @@ public class BankTransfer implements Serializable {
     private String value;
     private String account;
     private String agency;
+    private String name;
     private String bank;
 
     //Getters and Setters
@@ -43,5 +44,11 @@ public class BankTransfer implements Serializable {
     }
     public void setBank(String bank) {
         this.bank = bank;
+    }
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
     }
 }
