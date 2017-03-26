@@ -10,6 +10,6 @@ import java.util.List;
  */
 public interface PerformanceRepository extends CrudRepository<Performance, Long> {
 
-    public List<Performance> listAll();
+    public List<Performance> findAll();
 
 }
