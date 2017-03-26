@@ -3,8 +3,7 @@ package com.rafagonc.core.models;
 import com.rafagonc.core.repository.PerformanceRepository;
 import com.rafagonc.core.result.BankTransfer;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.List;
 
@@ -13,6 +12,10 @@ import java.util.List;
  */
 @Entity
 public class Performance implements Serializable{
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
 
     @Column(nullable = false)
     public Integer cpf;
