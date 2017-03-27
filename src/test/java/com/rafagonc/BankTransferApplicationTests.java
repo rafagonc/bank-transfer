@@ -16,7 +16,7 @@ public class BankTransferApplicationTests {
 	@Autowired BankTransferApplication application;
 
 	@Test
-	public void test1() {
+	public void test1() throws Exception {
 		String text =
 				"Jorge Brito Gibelli David\n" +
 				"Banco do Brasil\n" +
@@ -40,7 +40,7 @@ public class BankTransferApplicationTests {
 	}
 
 	@Test
-	public void test2() {
+	public void test2() throws Exception  {
 		String text =
 				"Paschoal Bianco Filho\n" +
 						"Agência 7865-4\n" +
@@ -59,7 +59,7 @@ public class BankTransferApplicationTests {
 	}
 
 	@Test
-	public void test3() {
+	public void test3() throws Exception  {
 		String text = "Banco do Brasil. Agência 1881-3. Conta corrente 14.940-3. CPF 026.701.109-16";
 
 		BankTransferRequest bankTransferRequest = new BankTransferRequest(text,"");
@@ -75,7 +75,7 @@ public class BankTransferApplicationTests {
 
 
 	@Test
-	public void test4() {
+	public void test4() throws Exception  {
 		String text = "Banco do BR\n" +
 				"Cc: 8209-0\n" +
 				"Ag: 4227-7\n" +
@@ -94,7 +94,7 @@ public class BankTransferApplicationTests {
 	}
 
 	@Test
-	public void test6() {
+	public void test6() throws Exception  {
 		String text = "Banco do BR\n" +
 				"Cc: 007104\n" +
 				"Ag: 4227-7\n" +
@@ -114,7 +114,7 @@ public class BankTransferApplicationTests {
 	}
 
 	@Test
-	public void test5() {
+	public void test5() throws Exception  {
 		String text = "Banco do BR\n" +
 				"4227-7\n" +
 				"28209-0\n" +
