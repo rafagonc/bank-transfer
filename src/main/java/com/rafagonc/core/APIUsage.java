@@ -1,5 +1,6 @@
 package com.rafagonc.core;
 
+import com.oracle.tools.packager.Log;
 import com.rafagonc.core.exceptions.APIDenyException;
 import com.rafagonc.core.models.APIConsumer;
 import com.rafagonc.core.repository.APIConsumerRepository;
@@ -13,6 +14,7 @@ public class APIUsage {
         APIConsumer apiConsumer = apiConsumerRepository.findByKey(masterKey);
         System.out.print(masterKey);
         System.out.print(apiConsumer);
+        Log.info(masterKey);
         if (apiConsumer == null) {
             throw new APIDenyException("Invalid Credentials");
         } else {
