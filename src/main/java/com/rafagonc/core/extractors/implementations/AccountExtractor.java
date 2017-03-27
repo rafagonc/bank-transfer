@@ -9,7 +9,7 @@ import com.rafagonc.core.result.BankTransfer;
 public class AccountExtractor extends RegexDataExtractor implements BankDataExtractor {
 
     public AccountExtractor() {
-        super("\\b([0-9]{2})\\.?([0-9]{2,})-([0-9]{1})\\b", "conta", "Conta", "corrente", "Corrente", "cc", "CC.", "cc.","CC");
+        super("\\b([0-9]{2})\\.?([0-9]{2,})-([0-9]{1})\\b", "conta", "Conta", "corrente", "Corrente", "cc", "CC.", "cc.","CC","cta","cta.","C\\c","C/c","c/c");
     }
 
     @Override
@@ -30,7 +30,6 @@ public class AccountExtractor extends RegexDataExtractor implements BankDataExtr
                 }
             }
         }
-        if (result != null) transfer.setAccount(result);
         return result;
     }
 }

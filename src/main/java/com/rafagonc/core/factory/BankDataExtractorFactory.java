@@ -22,9 +22,7 @@ public class BankDataExtractorFactory {
         for (Bank bank: Bank.values()) {
             list.add(new BankExtractor(bank));
         }
-        list.add(new PerformanceExtractor());
+        list.add(new WeakAccountExtractor());
         return list;
     }
-
-
 }
