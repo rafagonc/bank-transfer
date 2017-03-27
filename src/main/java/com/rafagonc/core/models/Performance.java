@@ -11,6 +11,7 @@ import java.util.List;
  * Created by rafagonc on 26/03/17.
  */
 @Entity
+@Table(name = "performance")
 public class Performance implements Serializable{
 
     @Id
