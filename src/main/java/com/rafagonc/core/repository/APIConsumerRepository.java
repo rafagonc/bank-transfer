@@ -10,7 +10,7 @@ import org.springframework.data.repository.query.Param;
  */
 public interface APIConsumerRepository extends CrudRepository<APIConsumer, Long> {
 
-    @Query("SELECT * FROM APIConsumer WHERE key LIKE :key")
+    @Query("FROM APIConsumer WHERE key LIKE :key")
     APIConsumer findByKey(@Param("key") String key);
 
 }
