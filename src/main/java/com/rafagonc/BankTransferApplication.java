@@ -2,6 +2,7 @@ package com.rafagonc;
 
 import com.rafagonc.core.APIUsage;
 import com.rafagonc.core.BankDataProcessor;
+import com.rafagonc.core.exceptions.APIDenyException;
 import com.rafagonc.core.models.BankTransferRequest;
 import com.rafagonc.core.models.BankTransferResponse;
 import com.rafagonc.core.models.Performance;
@@ -30,7 +31,7 @@ public class BankTransferApplication {
 	@Autowired APIConsumerRepository apiConsumerRepository;
 
 	@RequestMapping(value = "/" , method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
-	public BankTransferResponse proccess(@Valid @RequestBody BankTransferRequest bankTransferRequest, HttpServletRequest request) {
+	public BankTransferResponse proccess(@Valid @RequestBody BankTransferRequest bankTransferRequest, HttpServletRequest request) throws APIDenyException {
 
 		APIUsage.track(bankTransferRequest.getMaster_key(), bankTransferRequest.getText(), apiConsumerRepository);
 
