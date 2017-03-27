@@ -11,12 +11,12 @@ import java.io.Serializable;
 public class BankTransferResponse implements Serializable {
 
     private BankTransfer transfer;
-    private String path;
+    private String method;
     private String status;
 
     public BankTransferResponse(BankTransfer transfer, HttpServletRequest request) {
         this.transfer = transfer;
-        this.path = (request != null)? request.getPathInfo():null;
+        this.method = (request != null)? request.getMethod():null;
         this.status = "200";
     }
     public BankTransferResponse() {
@@ -31,12 +31,12 @@ public class BankTransferResponse implements Serializable {
         this.transfer = transfer;
     }
 
-    public String getPath() {
-        return path;
+    public String getMethod() {
+        return method;
     }
 
-    public void setPath(String path) {
-        this.path = path;
+    public void setMethod(String method) {
+        this.method = method;
     }
 
     public String getStatus() {
