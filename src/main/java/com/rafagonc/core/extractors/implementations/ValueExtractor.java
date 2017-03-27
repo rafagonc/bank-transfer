@@ -9,7 +9,7 @@ import com.rafagonc.core.result.BankTransfer;
 public class ValueExtractor extends RegexDataExtractor implements BankDataExtractor {
 
     public ValueExtractor() {
-        super("R?\\$\\s?[0-9]+((,|\\.)[0-9]+)?", "valor", "Valor", "reais", "Reais", "R$", "$", "montante");
+        super("\\bR?(\\$?)(\\s?)(\\d*)((\\.|,)\\d*)\\b", "valor", "Valor", "reais", "Reais", "R$", "$", "montante");
     }
 
     @Override
