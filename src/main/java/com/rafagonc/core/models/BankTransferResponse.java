@@ -17,7 +17,7 @@ public class BankTransferResponse implements Serializable {
     public BankTransferResponse(BankTransfer transfer, HttpServletRequest request) {
         this.transfer = transfer;
         this.path = (request != null)? request.getPathInfo():null;
-        this.status = 200;
+        this.status = "200";
     }
     public BankTransferResponse() {
     }
