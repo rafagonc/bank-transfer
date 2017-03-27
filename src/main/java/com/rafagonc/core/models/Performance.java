@@ -43,9 +43,9 @@ public class Performance implements Serializable{
     }
 
     public static void analyze(BankTransfer bankTransfer, PerformanceRepository repository) {
-        List<Performance> list = repository.listAll();
+        List<Performance> list = repository.findAll();
         if (list.size() > 0) {
-            Performance performance = repository.listAll().get(0);
+            Performance performance = repository.findAll().get(0);
             if (bankTransfer.getCpf() != null) performance.cpf += 1;
             if (bankTransfer.getName() != null) performance.name += 1;
             if (bankTransfer.getAccount() != null) performance.account += 1;
