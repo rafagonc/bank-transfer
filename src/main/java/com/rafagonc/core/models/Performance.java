@@ -14,9 +14,7 @@ import java.util.List;
 public class Performance implements Serializable{
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator="performance_id_seqs")
-    @SequenceGenerator(name="performance_id_seqs", sequenceName="perfmance_ids_seqs", allocationSize=1)
-    @Column(name = "PER_ID")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(nullable = false)
