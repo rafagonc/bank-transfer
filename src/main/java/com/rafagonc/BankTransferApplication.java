@@ -16,6 +16,7 @@ import javax.validation.Valid;
 
 @SpringBootApplication
 @RestController
+@EnableAutoConfiguration
 public class BankTransferApplication {
 
 	@Autowired PerformanceRepository performanceRepository;
