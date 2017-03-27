@@ -11,6 +11,8 @@ public class APIUsage {
 
     public static void track(String masterKey, String text, APIConsumerRepository apiConsumerRepository) throws APIDenyException {
         APIConsumer apiConsumer = apiConsumerRepository.findByKey(masterKey);
+        System.out.print(masterKey);
+        System.out.print(apiConsumer);
         if (apiConsumer == null) {
             throw new APIDenyException("Invalid Credentials");
         } else {
