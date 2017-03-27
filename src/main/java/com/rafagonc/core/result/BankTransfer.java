@@ -13,6 +13,7 @@ public class BankTransfer implements Serializable {
     private String agency;
     private String name;
     private String bank;
+    private String cnpj;
 
     //Getters and Setters
     public String getCpf() {
@@ -50,5 +51,11 @@ public class BankTransfer implements Serializable {
     }
     public void setName(String name) {
         this.name = name;
+    }
+    public String getCnpj() {
+        return cnpj;
+    }
+    public void setCnpj(String cnpj) {
+        this.cnpj = cnpj;
     }
 }

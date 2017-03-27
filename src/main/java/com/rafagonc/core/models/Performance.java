@@ -48,6 +48,7 @@ public class Performance implements Serializable{
         if (list.size() > 0) {
             Performance performance = repository.findAll().get(0);
             if (bankTransfer.getCpf() != null) performance.cpf += 1;
+            if (bankTransfer.getCnpj() != null) performance.cpf += 1;
             if (bankTransfer.getName() != null) performance.name += 1;
             if (bankTransfer.getAccount() != null) performance.account += 1;
             if (bankTransfer.getAgency() != null) performance.agency += 1;
@@ -59,6 +60,7 @@ public class Performance implements Serializable{
             Performance performance = new Performance();
             performance.cpf = bankTransfer.getCpf() != null ? 1 : 0;
             performance.name = bankTransfer.getName() != null ? 1 : 0;;
+            performance.cpf = bankTransfer.getCnpj() != null ? 1 : 0;
             performance.account = bankTransfer.getAccount() != null ? 1 : 0;;
             performance.agency = bankTransfer.getAgency() != null ? 1 : 0;;
             performance.bank = bankTransfer.getBank() != null ? 1 : 0;;
