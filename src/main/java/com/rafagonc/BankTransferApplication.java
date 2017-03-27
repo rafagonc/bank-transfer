@@ -3,7 +3,6 @@ package com.rafagonc;
 import com.rafagonc.core.APIUsage;
 import com.rafagonc.core.BankDataProcessor;
 import com.rafagonc.core.exceptions.APIDenyException;
-import com.rafagonc.core.models.APIConsumer;
 import com.rafagonc.core.models.BankTransferRequest;
 import com.rafagonc.core.models.BankTransferResponse;
 import com.rafagonc.core.models.Performance;
@@ -22,7 +21,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
-import java.util.UUID;
 
 @SpringBootApplication
 @RestController
@@ -34,12 +32,6 @@ public class BankTransferApplication {
 
 	@RequestMapping(value = "/" , method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
 	public BankTransferResponse proccess(@Valid @RequestBody BankTransferRequest bankTransferRequest, HttpServletRequest request) throws APIDenyException {
-
-		APIConsumer consumer = new APIConsumer();
-		consumer.setCalls(0);
-		consumer.setKey(UUID.randomUUID().toString());
-		consumer.setName("teste");
-		apiConsumerRepository.save(consumer);
 
 		APIUsage.track(bankTransferRequest.getMaster_key(), bankTransferRequest.getText(), apiConsumerRepository);
 
