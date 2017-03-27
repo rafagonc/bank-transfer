@@ -1,6 +1,6 @@
 package com.rafagonc;
 
-import com.rafagonc.core.BankTransferRequest;
+import com.rafagonc.core.models.BankTransferRequest;
 import com.rafagonc.core.result.BankTransfer;
 import org.junit.Assert;
 import org.junit.Test;
@@ -29,7 +29,7 @@ public class BankTransferApplicationTests {
 
 		BankTransferRequest bankTransferRequest = new BankTransferRequest(text,"");
 
-		BankTransfer bankTransfer = application.proccess(bankTransferRequest);
+		BankTransfer bankTransfer = application.proccess(bankTransferRequest,null).getTransfer();
 
 		Assert.assertTrue(bankTransfer.getCpf().equals("44107383806"));
 		Assert.assertTrue(bankTransfer.getAccount().equals("19945-1"));
@@ -50,7 +50,7 @@ public class BankTransferApplicationTests {
 
 		BankTransferRequest bankTransferRequest = new BankTransferRequest(text,"");
 
-		BankTransfer bankTransfer = application.proccess(bankTransferRequest);
+        BankTransfer bankTransfer = application.proccess(bankTransferRequest,null).getTransfer();
 
 		Assert.assertTrue(bankTransfer.getAccount().equals("0015181-5"));
 		Assert.assertTrue(bankTransfer.getCpf().equals("41737177846"));
@@ -64,7 +64,7 @@ public class BankTransferApplicationTests {
 
 		BankTransferRequest bankTransferRequest = new BankTransferRequest(text,"");
 
-		BankTransfer bankTransfer = application.proccess(bankTransferRequest);
+        BankTransfer bankTransfer = application.proccess(bankTransferRequest,null).getTransfer();
 
 		Assert.assertTrue(bankTransfer.getCpf().equals("02670110916"));
 		Assert.assertTrue(bankTransfer.getAccount().equals("14940-3"));
@@ -84,7 +84,7 @@ public class BankTransferApplicationTests {
 
 		BankTransferRequest bankTransferRequest = new BankTransferRequest(text,"");
 
-		BankTransfer bankTransfer = application.proccess(bankTransferRequest);
+        BankTransfer bankTransfer = application.proccess(bankTransferRequest,null).getTransfer();
 
 		Assert.assertTrue(bankTransfer.getCpf().equals("44347807864"));
 		Assert.assertTrue(bankTransfer.getAccount().equals("8209-0"));
@@ -103,7 +103,7 @@ public class BankTransferApplicationTests {
 
 		BankTransferRequest bankTransferRequest = new BankTransferRequest(text,"");
 
-		BankTransfer bankTransfer = application.proccess(bankTransferRequest);
+        BankTransfer bankTransfer = application.proccess(bankTransferRequest,null).getTransfer();
 
 		System.out.print(bankTransfer.getAccount());
 
@@ -123,7 +123,7 @@ public class BankTransferApplicationTests {
 
 		BankTransferRequest bankTransferRequest = new BankTransferRequest(text,"");
 
-		BankTransfer bankTransfer = application.proccess(bankTransferRequest);
+        BankTransfer bankTransfer = application.proccess(bankTransferRequest,null).getTransfer();
 
 		Assert.assertTrue(bankTransfer.getAccount().equals("28209-0"));
 		Assert.assertTrue(bankTransfer.getCpf().equals("44347807864"));

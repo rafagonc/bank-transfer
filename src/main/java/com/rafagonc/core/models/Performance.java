@@ -2,6 +2,8 @@ package com.rafagonc.core.models;
 
 import com.rafagonc.core.repository.PerformanceRepository;
 import com.rafagonc.core.result.BankTransfer;
+import org.hibernate.validator.constraints.NotEmpty;
+import org.hibernate.validator.constraints.SafeHtml;
 
 import javax.persistence.*;
 import java.io.Serializable;

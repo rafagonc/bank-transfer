@@ -1,4 +1,4 @@
-package com.rafagonc.core;
+package com.rafagonc.core.models;
 
 import org.hibernate.validator.constraints.NotEmpty;
 import org.hibernate.validator.constraints.SafeHtml;
@@ -6,7 +6,7 @@ import org.hibernate.validator.constraints.SafeHtml;
 import java.io.Serializable;
 
 /**
- * Created by rafagonc on 26/03/17.
+ * Created by rafagonc on 27/03/17.
  */
 public class BankTransferRequest implements Serializable {
 
@@ -19,6 +19,7 @@ public class BankTransferRequest implements Serializable {
     //constructors
     public BankTransferRequest() {
     }
+
     public BankTransferRequest(String text, String master_key) {
         this.text = text;
         this.master_key = master_key;
@@ -28,12 +29,15 @@ public class BankTransferRequest implements Serializable {
     public String getText() {
         return text;
     }
+
     public void setText(String text) {
         this.text = text;
     }
+
     public String getMaster_key() {
         return master_key;
     }
+
     public void setMaster_key(String master_key) {
         this.master_key = master_key;
     }
