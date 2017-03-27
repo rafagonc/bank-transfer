@@ -14,7 +14,7 @@ public class APIUsage {
         APIConsumer apiConsumer = apiConsumerRepository.findByKey(masterKey);
         System.out.print(masterKey);
         System.out.print(apiConsumer);
-        Log.info(masterKey);
+        Log.info("masterkey:"+masterKey);
         if (apiConsumer == null) {
             throw new APIDenyException("Invalid Credentials");
         } else {
