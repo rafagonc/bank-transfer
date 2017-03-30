@@ -7,7 +7,7 @@
 - POST
 ```
 {
-"text" : "bank info"
+"text" : "CPF 432.321.231-43 \n Conta 00121-1, ..."
 }
 ```
 
