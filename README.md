@@ -2,7 +2,24 @@
 
 *Bank transfer information extractor*
 
-### Method
+### Request
 
- - POST (String text);
-        
+- POST
+```
+{
+"text" : "bank info"
+}
+```
+
+### Response
+
+```
+{
+"cpf" : "____" ,
+"cnpj" : "____" ,
+"agency" : "____" ,
+"account" : "____" ,
+"bank" : "____" ,
+"name" : "____" ,
+}
+```
