@@ -1,7 +1,7 @@
 package com.rafagonc;
 
-import com.rafagonc.core.models.BankTransferRequest;
-import com.rafagonc.core.result.BankTransfer;
+import com.rafagonc.banktransfer.models.BankTransferRequest;
+import com.rafagonc.banktransfer.result.BankTransfer;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
