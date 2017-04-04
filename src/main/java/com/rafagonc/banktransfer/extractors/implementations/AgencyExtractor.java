@@ -9,7 +9,7 @@ import com.rafagonc.banktransfer.result.BankTransfer;
 public class AgencyExtractor extends RegexDataExtractor implements BankDataExtractor {
 
     public AgencyExtractor() {
-        super("\\b[0-9]{4}(-[0-9]{1})?\\b", "agencia", "Agencia", "agência", "Agência", "Ag", "ag", "Ag.", "ag.");
+        super("\\s\\b[0-9]{4}(-[0-9]{1})?\\b", "agencia", "Agencia", "agência", "Agência", "Ag", "ag", "Ag.", "ag.");
     }
 
     @Override
