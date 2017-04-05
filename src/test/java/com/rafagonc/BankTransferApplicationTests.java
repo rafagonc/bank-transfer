@@ -157,7 +157,7 @@ public class BankTransferApplicationTests {
 				"4227\n" +
 				"282090\n" +
 				"44347807864 \n" +
-				"130,00";
+				"130";
 
 		BankTransferRequest bankTransferRequest = new BankTransferRequest(text,"");
 
@@ -167,7 +167,27 @@ public class BankTransferApplicationTests {
 		Assert.assertTrue(bankTransfer.getCpf().equals("44347807864"));
 		Assert.assertTrue(bankTransfer.getAgency().equals("4227"));
 		Assert.assertTrue(bankTransfer.getBank().equals("Bradesco"));
-		Assert.assertTrue(bankTransfer.getValue().equals("130,00"));
+		Assert.assertTrue(bankTransfer.getValue().equals("130"));
+	}
+
+	@Test
+	public void test10() throws Exception  {
+		String text = "16/03/2017 01:30:23: Rafael Gonçalves: \n" +
+				"Bradesco \n" +
+				"4227\n" +
+				"282090\n" +
+				"44347807864 \n" +
+				"130";
+
+		BankTransferRequest bankTransferRequest = new BankTransferRequest(text,"");
+
+		BankTransfer bankTransfer = application.proccess(bankTransferRequest,null).getTransfer();
+
+		Assert.assertTrue(bankTransfer.getAccount().equals("282090"));
+		Assert.assertTrue(bankTransfer.getCpf().equals("44347807864"));
+		Assert.assertTrue(bankTransfer.getAgency().equals("4227"));
+		Assert.assertTrue(bankTransfer.getBank().equals("Bradesco"));
+		Assert.assertTrue(bankTransfer.getValue().equals("130"));
 	}
 
 	@Test
