@@ -8,7 +8,7 @@ import com.rafagonc.banktransfer.result.BankTransfer;
 public class WhatsAppNameExtractor extends RegexDataExtractor {
 
     public WhatsAppNameExtractor() {
-        super("(?<=\\d{2}\\/\\d{2}\\/\\d{2}\\s\\d{2}:\\d{2}:\\d{2}:\\s).*(?=:)");
+        super("(?<=\\d{2}\\/\\d{2}\\/\\d{2,4}\\s\\d{2}:\\d{2}:\\d{2}:\\s).*(?=:)");
     }
 
     @Override

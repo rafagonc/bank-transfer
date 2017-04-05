@@ -209,6 +209,22 @@ public class BankTransferApplicationTests {
 		Assert.assertTrue(bankTransfer.getValue().equals("130,00"));
 	}
 
+	@Test
+	public void test11() throws Exception  {
+		String text = "05/04/2017 10:41:16: Lê: Olá. \n" +
+				"Segue:\n" +
+				"Itau\n" +
+				"2923\n" +
+				"23234-8\n" +
+				"100,00\n" +
+				"35229716810 ";
+
+		BankTransferRequest bankTransferRequest = new BankTransferRequest(text,"");
+
+		BankTransfer bankTransfer = application.proccess(bankTransferRequest,null).getTransfer();
+
+		Assert.assertTrue(bankTransfer.getName().equals("Lê"));
+	}
 
 
 }
