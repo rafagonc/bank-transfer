@@ -11,7 +11,7 @@ import java.util.regex.Pattern;
 public class LooseValueExtractor extends RegexDataExtractor {
 
     public LooseValueExtractor() {
-        super("\\b(\\d{1,}(,|\\.)?\\d{1,})\\b");
+        super("\\b(\\d{1,},\\d{1,})\\b");
     }
 
     @Override

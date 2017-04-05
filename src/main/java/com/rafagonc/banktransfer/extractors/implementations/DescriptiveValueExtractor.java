@@ -18,7 +18,7 @@ public class DescriptiveValueExtractor extends RegexDataExtractor {
     public String extract(String text, BankTransfer transfer) {
         String result = super.extract(text, transfer);
         if (result != null) {
-            Pattern pattern = Pattern.compile("(\\d{1,})");
+            Pattern pattern = Pattern.compile("(\\d{1,})((,)\\d{1,})?");
             Matcher matcher = pattern.matcher(result);
             if (matcher.find()) {
                 String value = matcher.group();
