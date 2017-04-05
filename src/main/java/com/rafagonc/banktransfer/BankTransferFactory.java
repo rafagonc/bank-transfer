@@ -46,7 +46,7 @@ public class BankTransferFactory {
         Matcher matcher = p.matcher(text);
         while (matcher.find()) {
             String find = matcher.group();
-            if (find.equals(result) && matcher.start() > 0) {
+            if (find.equals(result) && matcher.start() >= 0) {
                 return text.substring(0,matcher.start()) + text.substring(matcher.end(), text.length());
             }
         }

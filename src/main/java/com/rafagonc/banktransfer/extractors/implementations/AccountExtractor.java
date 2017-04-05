@@ -25,7 +25,7 @@ public class AccountExtractor extends RegexDataExtractor implements BankDataExtr
                     String accountWithoutDigit = split[0];
                     if (accountWithoutDigit.length() > 4) {
                         if (result != null) transfer.setAccount(account);
-                        return accountWithoutDigit;
+                        return result;
                     }
                 }
             }
