@@ -24,7 +24,7 @@ public class BankDataExtractorFactory {
         }
         list.add(new ValueExtractor());
         list.add(new WeakAccountExtractor());
-        list.add(new DescriptiveValueExtractor());
+        //list.add(new DescriptiveValueExtractor());
         list.add(new LooseValueExtractor());
         return list;
     }
