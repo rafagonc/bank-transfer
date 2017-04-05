@@ -9,13 +9,13 @@ import com.rafagonc.banktransfer.result.BankTransfer;
 public class ValueExtractor extends RegexDataExtractor implements BankDataExtractor {
 
     public ValueExtractor() {
-        super("\\bR(\\$?)(\\s?)(\\d*)((\\.|,)\\d*)?\\b", "valor", "Valor", "reais", "Reais", "R$", "$", "montante");
+        super("(R)?(\\$)(\\s?)(\\d*)((\\.|,)\\d*)?", "valor", "Valor", "reais", "Reais", "R$", "$", "montante");
     }
 
     @Override
     public String extract(String text, BankTransfer transfer) {
         String result = super.extract(text, transfer);
-        if (result != null) transfer.setValue(result);
+        if (result != null) transfer.setValue(result.replace("$","").replace("R",""));
         return result;
     }
 }

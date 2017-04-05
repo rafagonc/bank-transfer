@@ -14,7 +14,10 @@ public class CNPJExtractor extends RegexDataExtractor {
     @Override
     public String extract(String text, BankTransfer transfer) {
         String s = super.extract(text, transfer);
-        transfer.setCnpj(s);
-        return s;
+        if (s != null) {
+            transfer.setCnpj(s.replace(".","").replace("/","").replace("-",""));
+            return s;
+        }
+        return null;
     }
 }

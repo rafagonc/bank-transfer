@@ -30,6 +30,6 @@ public class AccountExtractor extends RegexDataExtractor implements BankDataExtr
                 }
             }
         }
-        return result;
+        return null;
     }
 }

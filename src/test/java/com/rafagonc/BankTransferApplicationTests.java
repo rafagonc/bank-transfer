@@ -131,6 +131,64 @@ public class BankTransferApplicationTests {
 		Assert.assertTrue(bankTransfer.getBank().equals("Banco do Brasil"));
 	}
 
+	@Test
+	public void test7() throws Exception  {
+		String text = "Banco do BR\n" +
+				"4227-7\n" +
+				"28209-0\n" +
+				"Guilherme Leao de Azevedo Soter\n" +
+				"443.478.078-64 \n" +
+				"130 reais";
+
+		BankTransferRequest bankTransferRequest = new BankTransferRequest(text,"");
+
+		BankTransfer bankTransfer = application.proccess(bankTransferRequest,null).getTransfer();
+
+		Assert.assertTrue(bankTransfer.getAccount().equals("28209-0"));
+		Assert.assertTrue(bankTransfer.getCpf().equals("44347807864"));
+		Assert.assertTrue(bankTransfer.getAgency().equals("4227-7"));
+		Assert.assertTrue(bankTransfer.getBank().equals("Banco do Brasil"));
+		Assert.assertTrue(bankTransfer.getValue().equals("130"));
+	}
+
+	@Test
+	public void test8() throws Exception  {
+		String text = "Bradesco \n" +
+				"4227\n" +
+				"282090\n" +
+				"44347807864 \n" +
+				"130,00";
+
+		BankTransferRequest bankTransferRequest = new BankTransferRequest(text,"");
+
+		BankTransfer bankTransfer = application.proccess(bankTransferRequest,null).getTransfer();
+
+		Assert.assertTrue(bankTransfer.getAccount().equals("282090"));
+		Assert.assertTrue(bankTransfer.getCpf().equals("44347807864"));
+		Assert.assertTrue(bankTransfer.getAgency().equals("4227"));
+		Assert.assertTrue(bankTransfer.getBank().equals("Bradesco"));
+		Assert.assertTrue(bankTransfer.getValue().equals("130,00"));
+	}
+
+	@Test
+	public void test9() throws Exception  {
+		String text = "Bradesco \n" +
+				"4227\n" +
+				"282090\n" +
+				"71.547.608/0001-89 \n" +
+				"130,00";
+
+		BankTransferRequest bankTransferRequest = new BankTransferRequest(text,"");
+
+		BankTransfer bankTransfer = application.proccess(bankTransferRequest,null).getTransfer();
+
+		Assert.assertTrue(bankTransfer.getAccount().equals("282090"));
+		Assert.assertTrue(bankTransfer.getCnpj().equals("71547608000189"));
+		Assert.assertTrue(bankTransfer.getAgency().equals("4227"));
+		Assert.assertTrue(bankTransfer.getBank().equals("Bradesco"));
+		Assert.assertTrue(bankTransfer.getValue().equals("130,00"));
+	}
+
 
 
 }

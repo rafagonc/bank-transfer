@@ -14,7 +14,10 @@ public class WhatsAppNameExtractor extends RegexDataExtractor {
     @Override
     public String extract(String text, BankTransfer transfer) {
         String name = super.extract(text, transfer);
-        transfer.setName(name);
-        return name;
+        if (name != null) {
+            transfer.setName(name);
+            return name;
+        }
+        return null;
     }
 }

@@ -14,7 +14,10 @@ public class WeakAccountExtractor extends RegexDataExtractor {
     @Override
     public String extract(String text, BankTransfer transfer) {
         String account = super.extract(text, transfer);
-        if (account != null && transfer.getAccount() == null) transfer.setAccount(account);
-        return account;
+        if (account != null && transfer.getAccount() == null) {
+            transfer.setAccount(account);
+            return account;
+        }
+        return null;
     }
 }

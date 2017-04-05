@@ -14,15 +14,18 @@ public class BankDataExtractorFactory {
 
     public static List<BankDataExtractor> extractors() {
         ArrayList list = new ArrayList();
-        list.add(new CPFExtractor());
-        list.add(new AccountExtractor());
-        list.add(new AgencyExtractor());
-        list.add(new ValueExtractor());
         list.add(new WhatsAppNameExtractor());
+        list.add(new CPFExtractor());
+        list.add(new CNPJExtractor());
+        list.add(new AgencyExtractor());
+        list.add(new AccountExtractor());
         for (Bank bank: Bank.values()) {
             list.add(new BankExtractor(bank));
         }
+        list.add(new ValueExtractor());
         list.add(new WeakAccountExtractor());
+        list.add(new DescriptiveValueExtractor());
+        list.add(new LooseValueExtractor());
         return list;
     }
 }

@@ -2,6 +2,7 @@ package com.rafagonc.banktransfer;
 
 import com.rafagonc.banktransfer.exceptions.EmptyTextException;
 import com.rafagonc.banktransfer.extractors.contract.BankDataExtractor;
+import com.rafagonc.banktransfer.extractors.implementations.WhatsAppNameExtractor;
 import com.rafagonc.banktransfer.factory.BankDataExtractorFactory;
 import com.rafagonc.banktransfer.result.BankTransfer;
 
@@ -27,7 +28,10 @@ public class BankTransferFactory {
     public BankTransfer transfer() throws Exception {
         if (this.text == null || this.text.length() == 0) throw  new EmptyTextException("[BankTransferFactory transfer] Cannot proccess empty text");
         BankTransfer bankTransfer = new BankTransfer();
-        for (BankDataExtractor extractor : BankDataExtractorFactory.extractors()) extractor.extract(text, bankTransfer);
+        for (BankDataExtractor extractor : BankDataExtractorFactory.extractors()) {
+            String result = extractor.extract(text, bankTransfer);
+            if (result != null) text = text.replace(result," ");
+        }
         return bankTransfer;
     }
 }
