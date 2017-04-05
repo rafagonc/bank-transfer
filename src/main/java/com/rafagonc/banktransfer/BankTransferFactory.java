@@ -6,6 +6,9 @@ import com.rafagonc.banktransfer.extractors.implementations.WhatsAppNameExtracto
 import com.rafagonc.banktransfer.factory.BankDataExtractorFactory;
 import com.rafagonc.banktransfer.result.BankTransfer;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 /**
  * Created by Santander on 3/13/17.
  */
@@ -30,8 +33,23 @@ public class BankTransferFactory {
         BankTransfer bankTransfer = new BankTransfer();
         for (BankDataExtractor extractor : BankDataExtractorFactory.extractors()) {
             String result = extractor.extract(text, bankTransfer);
-            if (result != null) text = text.replace(result," ");
+            if (result != null) {
+                Pattern pattern = Pattern.compile(extractor.getRegex());
+                text = removeIfEquals(extractor.getRegex(), text, result);
+            }
         }
         return bankTransfer;
+    }
+
+    private String removeIfEquals(String regex, String text, String result) {
+        Pattern p = Pattern.compile(regex);
+        Matcher matcher = p.matcher(text);
+        while (matcher.find()) {
+            String find = matcher.group();
+            if (find.equals(result) && matcher.start() > 0) {
+                return text.substring(0,matcher.start()) + text.substring(matcher.end(), text.length());
+            }
+        }
+        return text;
     }
 }

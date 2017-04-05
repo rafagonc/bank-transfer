@@ -15,7 +15,7 @@ public class ValueExtractor extends RegexDataExtractor implements BankDataExtrac
     @Override
     public String extract(String text, BankTransfer transfer) {
         String result = super.extract(text, transfer);
-        if (result != null) transfer.setValue(result.replace("$","").replace("R",""));
+        if (result != null) transfer.setValue(result);
         return result;
     }
 }

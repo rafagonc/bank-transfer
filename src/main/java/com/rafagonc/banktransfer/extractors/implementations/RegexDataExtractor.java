@@ -57,4 +57,9 @@ public class RegexDataExtractor implements BankDataExtractor {
         Matcher matcher = pattern.matcher(text);
         return matcher;
     }
+
+    @Override
+    public String getRegex() {
+        return regex;
+    }
 }

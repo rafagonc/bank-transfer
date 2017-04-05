@@ -15,7 +15,7 @@ public class CPFExtractor extends RegexDataExtractor implements BankDataExtracto
     @Override
     public String extract(String text, BankTransfer transfer) {
         String result = super.extract(text, transfer);
-        if (result != null) transfer.setCpf(result);
+        if (result != null) transfer.setCpf(result.replace("-","").replace(".",""));
         return result;
     }
 }
