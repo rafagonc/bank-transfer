@@ -52,7 +52,7 @@ public class RegexDataExtractor implements BankDataExtractor {
         }
     }
 
-    private Matcher matcher(String text, String regex) {
+    protected Matcher matcher(String text, String regex) {
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(text);
         return matcher;

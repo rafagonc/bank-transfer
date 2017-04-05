@@ -23,8 +23,8 @@ public class AccountExtractor extends RegexDataExtractor implements BankDataExtr
                 if (account.contains("-")) {
                     String[] split = account.split("-");
                     String accountWithoutDigit = split[0];
-                    if (accountWithoutDigit.length() > 4) {
-                        if (result != null) transfer.setAccount(account);
+                    if (transfer.getAgency() != null) {
+                        if (result != null && !transfer.getAgency().equals(result)) transfer.setAccount(account);
                         return result;
                     }
                 }
