@@ -4,6 +4,7 @@ import com.rafagonc.banktransfer.extractors.contract.BankDataExtractor;
 import com.rafagonc.banktransfer.result.BankTransfer;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.regex.Matcher;
 
 /**
@@ -17,13 +18,13 @@ public class AgencyExtractor extends RegexDataExtractor implements BankDataExtra
 
     @Override
     public String extract(String text, BankTransfer transfer) {
-        ArrayList<String> agencies = new ArrayList<>();
-        Matcher matcher = matcher(text, getRegex());
-        while (matcher.find()) {
-            String group = matcher.group();
-            agencies.add(group);
+        String result = super.extract(text, transfer);
+        if (this.trust) {
+            transfer.setAgency(result);
+            return result;
         }
 
+        List<String> agencies = (List<String>) this.matches;
         if (agencies.size() == 0) return null;
         else {
             for (String s : agencies) {

@@ -9,7 +9,8 @@ public enum Bank {
     Bradesco("Bradesco", "(bradesco|Bradesco)"),
     Caixa("Caixa","(caixa|Caixa)"),
     HSBC("HSBC","(hsbc|HSBC)"),
-    BancoDoBrasil("Banco do Brasil","(banco\\sdo\\sbrasil|Banco\\sDo\\sBrasil|Banco\\sdo\\sBrasil|Banco\\sdo\\sbrasil|Banco\\sdo\\sBR|banco\\sdo\\sbr|Banco\\sdo\\sbr)");
+    BancoDoBrasil("Banco do Brasil","(banco\\sdo\\sbrasil|Banco\\sDo\\sBrasil|Banco\\sdo\\sBrasil|Banco\\sdo\\sbrasil|Banco\\sdo\\sBR|banco\\sdo\\sbr|Banco\\sdo\\sbr)"),
+    Citibank("Citibank","(Citibank|citibank|citi|Citi)");
 
     //Properties
     private String regex;

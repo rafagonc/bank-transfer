@@ -22,6 +22,7 @@ public class RegexDataExtractor implements BankDataExtractor {
 
     public RegexDataExtractor(String regex, String... fromLine) {
         this.regex = regex;
+        this.trust = false;
         this.fromLine = Arrays.asList(fromLine);
         this.matches = new ArrayList<>();
     }
