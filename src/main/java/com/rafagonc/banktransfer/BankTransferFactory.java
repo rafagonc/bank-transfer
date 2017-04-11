@@ -29,8 +29,10 @@ public class BankTransferFactory {
 
     //Methods
     public BankTransfer transfer() throws Exception {
-        if (this.text == null || this.text.length() == 0) throw  new EmptyTextException("[BankTransferFactory transfer] Cannot proccess empty text");
+        if (this.text == null || this.text.length() == 0) throw  new EmptyTextException("[BankTransferFactory transfer] Cannot process empty text");
         BankTransfer bankTransfer = new BankTransfer();
+        new WhatsAppNameExtractor().extract(text, bankTransfer);
+        text = WhatsAppNameExtractor.removeNameFromText(text);
         for (BankDataExtractor extractor : BankDataExtractorFactory.extractors()) {
             String result = extractor.extract(text, bankTransfer);
             if (result != null) {
