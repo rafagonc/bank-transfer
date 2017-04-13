@@ -14,7 +14,6 @@ public class BankTransferRequest implements Serializable {
     @NotEmpty
     @SafeHtml
     private String text;
-    private String master_key;
 
     //constructors
     public BankTransferRequest() {
@@ -22,7 +21,6 @@ public class BankTransferRequest implements Serializable {
 
     public BankTransferRequest(String text, String master_key) {
         this.text = text;
-        this.master_key = master_key;
     }
 
     //getters and setters
@@ -34,11 +32,4 @@ public class BankTransferRequest implements Serializable {
         this.text = text;
     }
 
-    public String getMaster_key() {
-        return master_key;
-    }
-
-    public void setMaster_key(String master_key) {
-        this.master_key = master_key;
-    }
 }
