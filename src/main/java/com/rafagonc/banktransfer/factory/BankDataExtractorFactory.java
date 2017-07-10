@@ -19,6 +19,7 @@ public class BankDataExtractorFactory {
         list.add(new CNPJExtractor());
         list.add(new AgencyExtractor());
         list.add(new AccountExtractor());
+        list.add(new SantanderAccountExtractor());
         for (Bank bank: Bank.values()) {
             list.add(new BankExtractor(bank));
         }

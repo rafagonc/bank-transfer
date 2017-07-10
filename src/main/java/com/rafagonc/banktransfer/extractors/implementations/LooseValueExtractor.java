@@ -11,7 +11,7 @@ import java.util.regex.Pattern;
 public class LooseValueExtractor extends RegexDataExtractor {
 
     public LooseValueExtractor() {
-        super("\\b(?<!-|\\/|\\\\|#|:|[a-zA-Z]|\\.)(\\d{1,10}((,|\\.)\\d{1,2})?(?!-|\\/|\\\\|#|:|[a-zA-Z]))\\b");
+        super("\\b(?<!-|\\/|\\\\|#|:|[a-zA-Z]|\\.)(\\d+((\\.?)\\d*)+((,|\\.)\\d{1,2})?(?!-|\\/|\\\\|#|:|[a-zA-Z]))\\b");
     }
 
     @Override
