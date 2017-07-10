@@ -232,6 +232,24 @@ public class BankTransferApplicationTests {
 	}
 
 	@Test
+	public void test13() throws Exception  {
+		String text = "05/04/2017 10:41:16: Lê: Olá. \n" +
+				"Segue:\n" +
+				"Itau\n" +
+				"2923\n" +
+				"01.232123.0\n" +
+				"100,00\n" +
+				"35229716810 ";
+
+		BankTransferRequest bankTransferRequest = new BankTransferRequest(text,"");
+
+		BankTransfer bankTransfer = application.proccess(bankTransferRequest,null).getTransfer();
+
+		Assert.assertTrue(bankTransfer.getName().equals("Lê"));
+		Assert.assertTrue(bankTransfer.getAccount().equals("012321230"));
+	}
+
+	@Test
 	public void test11() throws Exception  {
 		String text = "05/04/2017 10:41:16: Lê: Olá. \n" +
 				"Segue:\n" +

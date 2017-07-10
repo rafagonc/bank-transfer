@@ -32,7 +32,9 @@ public class BankTransfer implements Serializable {
         return account;
     }
     public void setAccount(String account) {
-        this.account = account.replace(".","");
+        if (account != null) {
+            this.account = account.replace(".","");
+        }
     }
     public String getAgency() {
         return agency;
